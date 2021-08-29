@@ -1,42 +1,37 @@
-var people=[];
+const people=[]; //Global Array
 
 
-function criaObjeto(name,lastname,weight,height){
-    return [
-        this.name = name,
-        this.lastname= lastname,
-        this.weight = weight,
-        this.height = height
-    ]
-       
+function criaObjeto(personName,personLastName,personWeight,personHeight){    
+    return { 
+        personName,
+        personLastName,
+        personWeight,
+        personHeight
+    }        
 }
 
 
-function adicionaObjeto(){
-   
-    var txtName = document.getElementById('txtName');
-    var txtLastName = document.getElementById('txtLastName');
-    var txtWeight = document.getElementById('txtWeight');
-    var txtHeight = document.getElementById('txtHeight');
-    
-    var name = txtName.value;
-    var lastname = txtLastName.value;
-    var weight = txtWeight.value;
-    var height = txtHeight.value;
+function insert(){
 
-    var person = criaObjeto(name,lastname,weight,height);
+    var name = document.getElementById('txtName');
+    var lastName = document.getElementById('txtLastName');
+    var weight = document.getElementById('txtWeight');
+    var height = document.getElementById('txtHeight');
+    var divpeople = document.getElementById('people');
 
-   
+    //Create object
+    var person= criaObjeto(name.value,lastName.value,weight.value,height.value);
+
+    //push object into array
     people.push(person);
-        
 
-    var result = document.getElementById('result');
+    console.log(people);
+
+    divpeople.innerHTML += `<br>Nome: ${name.value} Sobrenome: ${lastName.value} Altura: ${height.value} Peso: ${weight.value}<br>`;
 
 
-    result.innerHTML += `${person}`+'<br>';
-
-    txtName.value="";
-    txtLastName.value="";
-    txtHeight.value="";
-    txtWeight.value="";
+    name.value='';
+    lastName.value="";
+    weight.value="";
+    height.value="";
 }
