@@ -8,7 +8,7 @@ function submeter(){
     {
 
         evento.preventDefault();
-        
+        var trouxa;
         //Procure nome dentro do form
         var nome = form.querySelector('.nome');
         var peso = form.querySelector('.peso');
