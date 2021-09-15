@@ -2,7 +2,7 @@ const divParagrafos = document.querySelector('.paragrafos');
 
 //GETALL PARAGRAFOS DA DIV
 const tagsP = divParagrafos.querySelectorAll('p');
-
+console.log(tagsP);
 //PEGA TODOS ESTILOS DO BODY
 const stylesBody = getComputedStyle(document.body);
 
