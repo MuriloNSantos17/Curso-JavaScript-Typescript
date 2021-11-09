@@ -45,3 +45,7 @@ const nome = "Murilo Nunes dos Santos";
 let newNome = nome.split(" ");
 
 console.log(newNome);
+
+const nomeUnificado = newNome.join();
+    
+console.log(nomeUnificado);
