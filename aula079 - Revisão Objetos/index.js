@@ -19,3 +19,26 @@ pessoa1.sobrenome='Santos';
 console.log(pessoa1.nome);
 console.log(pessoa1.sobrenome);
 
+//FACTORY
+function Pessoa(nome,idade)
+{
+    this.nome =  nome;
+    this.idade= idade;
+    
+}
+
+
+const lucas = Pessoa('Lucas',24);
+
+//Construtor
+const matheus = new Pessoa('Matheus',20);
+
+console.log(matheus);
+matheus.nome = 'Mathias';
+
+//Congela Objeto
+Object.freeze(matheus);
+
+matheus.nome = "Matheus";
+
+console.log(matheus);
