@@ -34,6 +34,7 @@ const lucas = Pessoa('Lucas',24);
 const matheus = new Pessoa('Matheus',20);
 
 console.log(matheus);
+
 matheus.nome = 'Mathias';
 
 //Congela Objeto
