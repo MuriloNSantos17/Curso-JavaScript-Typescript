@@ -9,6 +9,15 @@ function Produto(nome,preco,estoque)
         writable: false, //se pode ser alterada
         configurable: false //Posso configurar, apagar chave do objeto?
     });
+
+    Object.defineProperties(this,{
+        nome:{
+            enumerable: true, //se a chave aparece
+            value: estoque, //valor
+            writable: false, //se pode ser alterada
+            configurable: false //Posso configurar, apagar chave do objeto?
+        }
+    });
     
 }
 
