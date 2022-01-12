@@ -60,3 +60,16 @@ console.log(conta2);
 
 conta2.sacar(400);
 
+
+function ContaPoupanca(agencia,numeroConta,saldo)
+{
+    CriaConta.call(this,agencia,numeroConta,saldo);
+}
+
+ContaPoupanca.prototype = Object.create(CriaConta.prototype);
+ContaPoupanca.prototype.constructor= ContaPoupanca;
+
+const conta3 = new ContaPoupanca(52,10,20);
+
+console.log(conta3);
+
