@@ -1,6 +1,6 @@
-import { nome, soma } from './modulo1.js';
+import { nome as nomeModulo, soma } from './modulo1.js';
 
-console.log(nome)
+console.log(nomeModulo)
 
 var calc = soma(1,2);
 
