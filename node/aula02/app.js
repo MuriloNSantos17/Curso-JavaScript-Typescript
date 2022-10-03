@@ -7,3 +7,6 @@ console.log(`Resultado Multiplicação: ${resultado}`);
 const pipoca = new Cachorro('Pipoca');
 pipoca.latir();
 
+
+console.log(__filename);
+console.log(__dirname);
