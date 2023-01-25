@@ -1,0 +1,1 @@
+mongodb+srv://murilosantos:<password>@cursojs01.hpueive.mongodb.net/?retryWrites=true&w=majority
