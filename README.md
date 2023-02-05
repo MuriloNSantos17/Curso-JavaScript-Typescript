@@ -1,6 +1,5 @@
-# Título do projeto
+# Curso de JavaScript e TypeScript do Básico ao avançado. 
 
-Curso de JavaScript e TypeScript do Básico ao avançado. 
 Professor: Luiz Otávio Miranda 
 Link: https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/ 
 ## 🚀 Começando
