@@ -15,7 +15,23 @@ mongoose.connect(process.env.CONNECTIONSTRING).then(()=>{
     console.log(err);
 });
 
+const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
+const flash = require('connect-flash');
 
+const sessionOptions = session({
+    secret: "assasaslakl",
+    store: new MongoStore({mongooseConnection: mongoose.connection}),
+    resave: false,
+    saveUninitialized: false,
+    cookie:{
+        maxAge: 1000 * 60 * 60 * 24 * 7,
+        httpOnly: true
+    }
+})
+
+app.use(sessionOptions);
+app.use(flash())
 
 const path = require('path');
 const routes = require('./routes');
